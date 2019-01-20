@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
 const AddForm = ({rooms, onAddClick}) => {
     let name, room, daysCount;
     return <form>
