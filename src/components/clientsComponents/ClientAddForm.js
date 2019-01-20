@@ -18,3 +18,4 @@ AddForm.propTypes = {
     rooms: PropTypes.arrayOf(PropTypes.number).isRequired,
     onAddClick: PropTypes.func.isRequired
 }
+export default AddForm
