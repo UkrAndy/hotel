@@ -8,7 +8,6 @@ const RoomTable = (props) => {
             <th>№</th>
             <th>Номер кімнати</th>
             <th>Кількість місць</th>
-            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -17,5 +16,5 @@ const RoomTable = (props) => {
         ))}
         </tbody>
     </table>
-}
+};
 export default RoomTable

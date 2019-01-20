@@ -10,7 +10,6 @@ const ClientTable = (props) => {
             <th>ПІБ</th>
             <th>Кімната</th>
             <th>Кількість днів</th>
-            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -19,5 +18,5 @@ const ClientTable = (props) => {
         ))}
         </tbody>
     </table>
-}
+};
 export default ClientTable
