@@ -8,10 +8,10 @@ const addRoom=(roomNumber,placesCount)=>({
         roomNumber,
         placesCount
     }
-})
+});
 
 const deleteRoom=(roomID)=>({
     type:RoomsActionTypes.DELETE_ROOM,
     payload:roomID
-})
-export default {addRoom,deleteRoom}
+});
+export default {addRoom,deleteRoom};

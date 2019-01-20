@@ -1,6 +1,6 @@
 import React from 'React'
 import Room from './Room'
-const RoomTable = (props) => {
+const RoomTable = (props,onDelClick) => {
     const {rooms, ...rest} = props;
     return <table>
         <thead>
@@ -8,11 +8,12 @@ const RoomTable = (props) => {
             <th>№</th>
             <th>Номер кімнати</th>
             <th>Кількість місць</th>
+            <th>Видалення</th>
         </tr>
         </thead>
         <tbody>
         {rooms.map((room, i) => (
-            <Room {...room} num={i} {...rest}/>
+            <Room {...room} num={i} {...rest} onDelClick={onDelClick}/>
         ))}
         </tbody>
     </table>

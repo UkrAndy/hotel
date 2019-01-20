@@ -12,10 +12,8 @@ const AddForm = ({rooms, onAddClick}) => {
         </select>
         <label htmlFor="daysCount">КІЛЬКІСТЬ ДНІВ</label>
         <input id="daysCount" type="number" ref={node => daysCount = node} required/>
+        <button onClick={(e)=>onAddClick(e,name.value,room.value, daysCount.value)}>Додати</button>
     </form>
 };
-AddForm.propTypes = {
-    rooms: PropTypes.arrayOf(PropTypes.number).isRequired,
-    onAddClick: PropTypes.func.isRequired
-};
+
 export default AddForm

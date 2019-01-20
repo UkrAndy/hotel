@@ -1,7 +1,7 @@
 import React from 'React'
 import Client from './Client'
 
-const ClientTable = (props) => {
+const ClientTable = (props,onDelClick) => {
     const {clients, ...rest} = props;
     return <table>
         <thead>
@@ -10,11 +10,12 @@ const ClientTable = (props) => {
             <th>ПІБ</th>
             <th>Кімната</th>
             <th>Кількість днів</th>
+            <th>Видалення</th>
         </tr>
         </thead>
         <tbody>
         {clients.map((client, i) => (
-            <Client {...client} num={i} {...rest}/>
+            <Client {...client} num={i} {...rest} onDelClick={onDelClick}/>
         ))}
         </tbody>
     </table>

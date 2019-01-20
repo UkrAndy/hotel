@@ -8,9 +8,8 @@ const AddForm = ({onAddClick}) => {
         <input id="roomNumber" type="text" ref={node => roomNumber = node} required/>
         <label htmlFor="placesCount">КІЛЬКІСТЬ МІСЦЬ</label>
         <input id="placesCount" type="number" ref={node => placesCount = node} required/>
+        <button onClick={(e)=>onAddClick(e,roomNumber.value,placesCount.value)}>Додати</button>
     </form>
 };
-AddForm.propTypes = {
-    onAddClick: PropTypes.func.isRequired
-};
+
 export default AddForm
