@@ -17,5 +17,5 @@ const ClientsActionsCreators = {
         type: ClientsActionTypes.DELETE_CLIENT,
         payload: clientID
     })
-}
-export default ClientsActionsCreators
+};
+export default ClientsActionsCreators;

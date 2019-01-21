@@ -10,18 +10,18 @@ const clientsReducers = (state, action) => {
                 },
                 rooms: {...state.rooms}
 
-            }
+            };
         case ClientsActionTypes.DELETE_CLIENT:
-            let clients = {...state.clients}
-            delete clients[action.payload.id]
+            let clients = {...state.clients};
+            delete clients[action.payload.id];
             return {
                 clients,
                 rooms: {...state.rooms}
-            }
+            };
         default:
             return state
     }
-}
+};
 const roomsReducers = (state, action) => {
     switch (action.type) {
         case RoomsActionTypes.ADD_ROOM:
@@ -32,16 +32,16 @@ const roomsReducers = (state, action) => {
                 },
                 clients: {...state.clients}
 
-            }
+            };
         case RoomsActionTypes.DELETE_ROOM:
-            let rooms = {...state.rooms}
-            delete rooms[action.payload.id]
+            let rooms = {...state.rooms};
+            delete rooms[action.payload.id];
             return {
                 rooms,
                 clients: {...state.clients}
-            }
+            };
         default:
             return state
     }
-}
-export default {clientsReducers,roomsReducers}
+};
+export default {clientsReducers,roomsReducers};
