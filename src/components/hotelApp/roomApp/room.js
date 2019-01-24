@@ -1,15 +1,14 @@
 import React, {Component} from "react";
 
-const Client = ({id,name,roomNumber,dayCount,number,onDelClick})=>{
+const Room = ({id,roomNumber,placeCount,number,onDelClick})=>{
     return(
         <tr>
             <td>{number}</td>
-            <td>{name}</td>
             <td>{roomNumber}</td>
-            <td>{dayCount}</td>
+            <td>{placeCount}</td>
             <td><button onClick={(e)=>onDelClick(e,id)}>Видалити</button></td>
         </tr>
     )
 }
 
-export default Client;
+export default Room;

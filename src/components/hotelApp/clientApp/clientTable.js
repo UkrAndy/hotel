@@ -10,6 +10,7 @@ const ClientTable = ({clients,onDelClick})=>{
                     <th>Ім'я</th>
                     <th>Номер кімнати</th>
                     <th>Кількість днів</th>
+                    <th>видалення</th>
                 </tr>
             </thead>
             <tbody>

@@ -1,12 +1,12 @@
 import React, {Component} from "rect";
 import clientTable from "./clientTable";
-import addForm from "./addForm"
+import addClientForm from "./addClientForm"
 
 const clientApp = ({...params})=>{
     return(
         <div>
             <clientTable clients={client} onDelClick={onDelClick}/>
-            <addForm onAddClick={onDelClick}/>
+            <addClientForm onAddClick={onDelClick}/>
         </div>
     )
 }

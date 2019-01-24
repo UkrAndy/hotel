@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {v4} from "uuid"
 
-const AddForm = ({onAddClick})=>{
+const AddClientForm = ({onAddClick})=>{
     let id,name,roomNumber,dayCount
     return(
         <form>
@@ -22,4 +22,4 @@ const AddForm = ({onAddClick})=>{
     )
 }
 
-export default AddForm;
+export default AddClientForm;
