@@ -17,7 +17,7 @@ const AddClientForm = ({onAddClick})=>{
                 Введіть кількість днів:
                 <input type="number" ref={(v)=>dayCount=v}/>
             </label>
-            <button type="submit" onClick={(e)=>onAddClick(id=v4(),name,roomNumber,dayCount)}></button>
+            <button type="submit" onClick={(e)=>onAddClient(id=v4(),name,roomNumber,dayCount)}></button>
         </form>
     )
 }

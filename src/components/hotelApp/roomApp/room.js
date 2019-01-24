@@ -6,7 +6,7 @@ const Room = ({id,roomNumber,placeCount,number,onDelClick})=>{
             <td>{number}</td>
             <td>{roomNumber}</td>
             <td>{placeCount}</td>
-            <td><button onClick={(e)=>onDelClick(e,id)}>Видалити</button></td>
+            <td><button onClick={(e)=>onDelRoom(e,id)}>Видалити</button></td>
         </tr>
     )
 }

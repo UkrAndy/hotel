@@ -13,7 +13,7 @@ const AddRoomForm = ({onAddClick})=>{
                 кількість місць:
                 <input type="number" ref={(v)=>placeCount=v}/>
             </label>
-            <button type="submit" onClick={(e)=>onAddClick(id=v4(),roomNumber,placeCount)}></button>
+            <button type="submit" onClick={(e)=>onAddRoom(id=v4(),roomNumber,placeCount)}></button>
         </form>
     )
 }

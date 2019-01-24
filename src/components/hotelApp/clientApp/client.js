@@ -7,7 +7,7 @@ const Client = ({id,name,roomNumber,dayCount,number,onDelClick})=>{
             <td>{name}</td>
             <td>{roomNumber}</td>
             <td>{dayCount}</td>
-            <td><button onClick={(e)=>onDelClick(e,id)}>Видалити</button></td>
+            <td><button onClick={(e)=>onDelClient(e,id)}>Видалити</button></td>
         </tr>
     )
 }
