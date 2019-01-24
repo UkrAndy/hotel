@@ -1,8 +1,6 @@
 import {createStore} from "redux";
-import hotelReducers from "../reducers";
+import reduser from "../redusers"
 
-let initialStore = localStorage.getItem("hotel-store") ?
-    {products: JSON.parse(localStorage.getItem("hotel-store"))}
-    : {};
+let initialStore = {};
 
-export default createStore(hotelReducers, initialStore);
+export default createStore(reduser,initialStore);

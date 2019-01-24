@@ -1,4 +1,4 @@
-import {addRoom, deleteRoom} from "./RoomsActionCreators"
-import {addClient, deleteClient} from "./ClientsActionCreators"
+import roomActionCreator from "./roomActionCreator";
+import clientActionCreator from "./clientActionCreator";
 
-export default {addRoom, deleteRoom,addClient, deleteClient}
+export default {roomActionCreator,clientActionCreator}
